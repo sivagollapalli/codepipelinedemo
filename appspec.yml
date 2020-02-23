@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/apps/codepipelinedemo/deployment
+permissions:
+  - object: /home/ubuntu/apps/codepipelinedemo/deployment
+    owner: ubuntu 
+    group: ubuntu
+    pattern: "*"
+    mode: 775
+    type:
+      - file
+      - directory
